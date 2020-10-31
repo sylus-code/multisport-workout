@@ -1,0 +1,11 @@
+{
+  "name": "sylus-code/multisport-workout",
+  "description": "workout class and types",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SylusCode\\MultiSport\\Workout\\": "src/"
+    }
+  }
+}
