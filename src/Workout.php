@@ -8,14 +8,50 @@ class Workout
     private $type;
     private $distance;
     private $calories;
-    private $duration;
+    private $durationTotal;
     private $points = [];
     private $start;
-    private $end;
     private $avgHeartRate;
     private $maxHeartRate;
     private $hashtags = [];
     private $message;
+    private $avgSpeed;
+    private $durationActive;
+    private $steps;
+
+    public function getSteps(): ?int
+    {
+        return $this->steps;
+    }
+
+    public function setSteps($steps): self
+    {
+        $this->steps = $steps;
+        return $this;
+    }
+
+
+    public function getAvgSpeed(): ?float
+    {
+        return $this->avgSpeed;
+    }
+
+    public function setAvgSpeed($avgSpeed): self
+    {
+        $this->avgSpeed = $avgSpeed;
+        return $this;
+    }
+
+    public function getDurationActive(): int
+    {
+        return $this->durationActive;
+    }
+
+    public function setDurationActive($durationActive): self
+    {
+        $this->durationActive = $durationActive;
+        return $this;
+    }
 
     public function getTime(): \DateTime
     {
@@ -41,7 +77,7 @@ class Workout
         return $this;
     }
 
-    public function getDistance(): float
+    public function getDistance(): ?float
     {
         return $this->distance;
     }
@@ -65,14 +101,14 @@ class Workout
         return $this;
     }
 
-    public function getDuration(): int
+    public function getDurationTotal(): int
     {
-        return $this->duration;
+        return $this->durationTotal;
     }
 
-    public function setDuration(int $duration): self
+    public function setDurationTotal(int $durationTotal): self
     {
-        $this->duration = $duration;
+        $this->durationTotal = $durationTotal;
 
         return $this;
     }
@@ -108,19 +144,7 @@ class Workout
         return $this;
     }
 
-    public function getEnd(): \DateTime
-    {
-        return $this->end;
-    }
-
-    public function setEnd($end): self
-    {
-        $this->end = $end;
-
-        return $this;
-    }
-
-    public function getAvgHeartRate(): int
+    public function getAvgHeartRate(): ?int
     {
         return $this->avgHeartRate;
     }
@@ -132,7 +156,7 @@ class Workout
         return $this;
     }
 
-    public function getMaxHeartRate(): int
+    public function getMaxHeartRate(): ?int
     {
         return $this->maxHeartRate;
     }
@@ -144,7 +168,7 @@ class Workout
         return $this;
     }
 
-    public function getHashtags(): array
+    public function getHashtags(): ?array
     {
         return $this->hashtags;
     }
@@ -156,7 +180,7 @@ class Workout
         return $this;
     }
 
-    public function getMessage(): string
+    public function getMessage(): ?string
     {
         return $this->message;
     }

@@ -9,7 +9,6 @@ class Point
     private $longtitude;
     private $altitude;
     private $distance;
-    private $duration;
     private $heartRate;
     private $speed;
 
@@ -69,18 +68,6 @@ class Point
     public function setDistance($distance): self
     {
         $this->distance = $distance;
-
-        return $this;
-    }
-
-    public function getDuration(): ?int
-    {
-        return $this->duration;
-    }
-
-    public function setDuration(int $duration): self
-    {
-        $this->duration = $duration;
 
         return $this;
     }
