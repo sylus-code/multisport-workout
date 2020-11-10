@@ -4,15 +4,14 @@ namespace SylusCode\MultiSport\Workout;
 
 class Type
 {
-    const TYPE_RUNNING = 1; // 16;
-    const TYPE_INDOOR_RUN = 2; // 25;
-    const TYPE_BIKE = 3; // 11;
-    const TYPE_INDOOR_BIKE = 4; // 19;
-    const TYPE_GYM = 5; // 12;
-    const TYPE_SWIMMING = 6; // 20;
-    const TYPE_FREESTYLE = 7; // 21;
+    const TYPE_RUNNING = 1;
+    const TYPE_INDOOR_RUN = 2;
+    const TYPE_BIKE = 3;
+    const TYPE_INDOOR_BIKE = 4;
+    const TYPE_GYM = 5;
+    const TYPE_SWIMMING = 6;
+    const TYPE_FREESTYLE = 7;
     const TYPE_OTHER = 101;
-
 
     const NAMES = [
         self::TYPE_RUNNING => 'Bieganie',
