@@ -11,6 +11,7 @@ class Type
     const TYPE_GYM = 5;
     const TYPE_SWIMMING = 6;
     const TYPE_FREESTYLE = 7;
+    const TYPE_YOGA = 8;
     const TYPE_OTHER = 101;
 
     const NAMES = [
@@ -21,6 +22,7 @@ class Type
         self::TYPE_GYM => 'Siłownia',
         self::TYPE_SWIMMING => 'Pływanie',
         self::TYPE_FREESTYLE => 'W plenerze',
+        self::TYPE_YOGA => 'Joga',
         self::TYPE_OTHER => 'Inny'
 
     ];
