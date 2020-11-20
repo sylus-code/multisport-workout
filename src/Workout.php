@@ -16,8 +16,20 @@ class Workout
     private $hashtags = [];
     private $message;
     private $avgSpeed;
+    private $maxSpeed;
     private $durationActive;
     private $steps;
+
+    public function getMaxSpeed(): ?float
+    {
+        return $this->maxSpeed;
+    }
+
+    public function setMaxSpeed($maxSpeed): self
+    {
+        $this->maxSpeed = $maxSpeed;
+        return $this;
+    }
 
     public function getSteps(): ?int
     {
@@ -29,7 +41,6 @@ class Workout
         $this->steps = $steps;
         return $this;
     }
-
 
     public function getAvgSpeed(): ?float
     {
@@ -89,7 +100,7 @@ class Workout
         return $this;
     }
 
-   public function getCalories(): int
+    public function getCalories(): int
     {
         return $this->calories;
     }
