@@ -4,7 +4,6 @@ namespace SylusCode\MultiSport\Workout;
 
 class Workout
 {
-    private $time;
     private $type;
     private $distance;
     private $calories;
@@ -61,18 +60,6 @@ class Workout
     public function setDurationActive($durationActive): self
     {
         $this->durationActive = $durationActive;
-        return $this;
-    }
-
-    public function getTime(): \DateTime
-    {
-        return $this->time;
-    }
-
-    public function setTime(\DateTime $time): self
-    {
-        $this->time = $time;
-
         return $this;
     }
 
