@@ -52,7 +52,7 @@ class Workout
         return $this;
     }
 
-    public function getDurationActive(): int
+    public function getDurationActive(): ?int
     {
         return $this->durationActive;
     }
